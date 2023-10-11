@@ -377,10 +377,11 @@ a {
 
 .service__body {
     transition: 0.25s;
+    padding-bottom: 23px;
 }
 
 .service__item:hover .service__body {
-    padding: 0 18px 23px;
+    padding-left: 18px;
 }
 
 .service__thumb {
@@ -402,6 +403,212 @@ a {
     max-width: 268px;
     color: #7d8188;
     font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71; /* 171.429% */
+}
+
+/* ===========About============ */
+.about {
+    margin-top: 154px;
+}
+
+.about__inner {
+    display: flex;
+}
+
+/* ============Left============ */
+.about__media {
+    position: relative;
+    width: 51.84%;
+    padding-top: 13px;
+}
+
+.about__media-images {
+    position: relative;
+    display: flex;
+    gap: 21px;
+}
+
+.about__media-img {
+    width: 284px;
+    height: 480px;
+    border-radius: 210px;
+    object-fit: cover;
+    box-shadow: 0px 4px 234px 11px rgba(59, 137, 71, 0.25);
+}
+
+.about__media-img:first-child {
+    transform: translateY(77px);
+}
+
+.about__media-flower {
+    position: absolute;
+    top: -38px;
+    left: 46px;
+}
+
+.about__media-rope {
+    position: absolute;
+    top: 0px;
+    left: 82px;
+}
+
+.about__card {
+    position: absolute;
+    right: -9px;
+    bottom: -66px;
+    padding: 19px 17px 11px 17px;
+    width: 143px;
+    height: 144px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 7px 54px 0px rgba(154, 154, 154, 0.25);
+}
+
+.about__card-body {
+    max-width: 98px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about__tile {
+    white-space: nowrap;
+    margin-bottom: 6px;
+    color: #152427;
+    font-family: Public Sans;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.about__label {
+    display: block;
+    margin-bottom: 10px;
+    color: #575d5e;
+    font-family: Public Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4; /* 140% */
+    opacity: 0.4;
+}
+
+.about__text,
+.about__teams-text,
+.about__count {
+    color: #152427;
+    font-family: Public Sans;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4; /* 140% */
+}
+
+.about__text {
+    margin: 3px 0 0 57px;
+}
+
+.about__teams {
+    display: flex;
+}
+
+.about__team-avatar {
+    margin-left: -6px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    object-fit: cover;
+}
+
+.about__line {
+    margin-top: 3px;
+    position: relative;
+    width: 96px;
+    height: 2px;
+    border-radius: 10px;
+    background: #eaeaea;
+}
+
+.about__line::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    border-radius: 10px;
+    background: #83a17d;
+}
+
+.about__dot {
+    display: flex;
+}
+
+.about__point {
+    margin: 0 0 5px 2px;
+}
+
+.about__teams-text {
+    margin-right: 36px;
+}
+
+/* ===========Right========== */
+.about__content {
+    margin-left: 64px;
+}
+
+.about__name {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    color: #152427;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.13; /* 112.5% */
+}
+
+.about__name::before {
+    content: "";
+    width: 25px;
+    height: 1px;
+    background: #152427;
+}
+
+.about__heading,
+.countdown__number {
+    color: #152427;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24; /* 123.81% */
+}
+
+.about__heading {
+    margin: 20px 0 11px;
+}
+
+.about__desc {
+    color: #7d8188;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.63; /* 162.5% */
+    margin-bottom: 36px;
+}
+
+.countdown {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    gap: 24px;
+    border-bottom: 1px solid #83a17d;
+}
+
+.countdown:last-child {
+    padding-top: 38px;
+}
+
+.countdown__label {
+    color: #7d8188;
+    font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.71; /* 171.429% */
 }
