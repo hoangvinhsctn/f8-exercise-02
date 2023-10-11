@@ -275,3 +275,133 @@ a {
     font-weight: 400;
     line-height: 1.5;
 }
+
+/* ===========Service=========== */
+.service {
+    margin-top: 106px;
+}
+
+/* ===========Top======== */
+.service__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-info__label {
+    color: #152427;
+    position: relative;
+    margin-left: 46px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.63; /* 162.5% */
+}
+
+.service-info__label::before {
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: -46px;
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background: #152427;
+}
+
+.service-info__heading {
+    position: relative;
+    margin-top: 12px;
+    max-width: 520px;
+    color: #152427;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24; /* 123.81% */
+}
+
+.service-info__heading::after {
+    position: absolute;
+    bottom: 19px;
+    right: 103px;
+    content: "";
+    display: inline-block;
+    width: 66px;
+    height: 2px;
+    background: #152427;
+}
+
+.service-controls {
+    display: flex;
+    gap: 17px;
+    margin: 79px 73px 0 0;
+}
+
+.service-controls__btn {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-color: #e2eddf;
+    color: #152427;
+}
+
+.service-controls__btn--reverse {
+    rotate: 180deg;
+}
+
+.service-controls__btn:hover {
+    cursor: pointer;
+    background-color: #143c3c;
+    color: #fff;
+}
+
+/*=========Bottom=========*/
+.service__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    margin-top: 76px;
+}
+
+.service__item {
+    transition: 0.25s;
+}
+
+.service__item:hover {
+    border-radius: 0 0 20px 20px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+
+.service__body {
+    transition: 0.25s;
+}
+
+.service__item:hover .service__body {
+    padding: 0 18px 23px;
+}
+
+.service__thumb {
+    width: 370px;
+    height: 318px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.service__title {
+    margin: 24px 0 18px;
+    color: #152427;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.service__desc {
+    max-width: 268px;
+    color: #7d8188;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71; /* 171.429% */
+}
