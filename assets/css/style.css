@@ -907,3 +907,132 @@ a {
     font-weight: 500;
     line-height: 1.71; /* 171.429% */
 }
+
+/* ===========Blog=========== */
+.blog {
+    margin-top: 184px;
+}
+
+.blog__row {
+    display: flex;
+    align-items: center;
+    gap: 211px;
+}
+
+.blog__heading {
+    position: relative;
+    max-width: 520px;
+    color: #152427;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24; /* 123.81% */
+}
+
+.blog__heading::after {
+    position: absolute;
+    right: -51px;
+    bottom: 18px;
+    content: "";
+    display: inline-block;
+    width: 82px;
+    height: 3px;
+    background: #152427;
+}
+
+.blog__desc {
+    max-width: 409px;
+    color: #7d8188;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.63; /* 162.5% */
+}
+
+.blog__list {
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.blog__item {
+    border-radius: 40px 40px 20px 20px;
+    transition: 0.25s;
+    overflow: hidden;
+}
+
+.blog__inner {
+    padding-right: 22px;
+}
+
+.blog__item:hover {
+    background: #fff;
+    box-shadow: 0px 12px 74px 0px rgba(91, 91, 91, 0.25);
+}
+.blog__item:hover .blog__inner {
+    padding: 0px 33px 12px 30px;
+}
+
+.blog__item:hover .blog__title::after {
+    width: 297px;
+}
+
+.blog__item:hover .blog__label {
+    background-color: #143c3c;
+    color: #e2eddf;
+}
+
+.blog__item:hover .blog__title {
+    width: 281px;
+}
+
+.blog__thumb {
+    width: 360px;
+    height: 317px;
+    object-fit: cover;
+}
+
+.blog__label {
+    margin-top: 26px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: #e2eddf;
+    width: 107px;
+    height: 26px;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2; /* 120% */
+}
+
+.blog__title {
+    transition: 0.25s;
+    width: 346px;
+    margin-top: 13px;
+    color: #143c3c;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.blog__title::after {
+    margin-top: 9px;
+    content: "";
+    display: block;
+    width: 337px;
+    height: 1px;
+    background: #c4c4c4;
+    transition: 0.25s;
+}
+
+.blog__date {
+    margin-top: 16px;
+    display: block;
+    color: #575d5e;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2; /* 120% */
+    transition: 0.15s;
+    text-align: right;
+}
