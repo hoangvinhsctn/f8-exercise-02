@@ -841,3 +841,69 @@ a {
     top: -151px;
     right: -44px;
 }
+
+/* ==================Service Feat================= */
+.service-feat {
+    margin-top: 140px;
+    text-align: center;
+}
+
+.service-feat__heading {
+    max-width: 520px;
+    margin: 0 auto;
+    color: #152427;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24; /* 123.81% */
+}
+
+.service-feat__desc {
+    max-width: 547px;
+    margin: 20px auto 0;
+    color: #7d8188;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.63; /* 162.5% */
+}
+
+.service-feat__list {
+    margin-top: 103px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 45px;
+}
+
+.service-feat__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    height: 362px;
+    border-radius: 160px;
+    border: 1.5px solid #cecece;
+    padding: 80px 27px 74px 37px;
+    transition: 0.25s;
+}
+
+.service-feat__item:hover {
+    background: #fff;
+    box-shadow: 0px 36px 100px 0px rgba(111, 120, 111, 0.2);
+    transform: translateY(-59px);
+}
+
+.service-feat__title {
+    margin-top: 26px;
+    color: #152427;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.service-feat__content {
+    margin-top: 9px;
+    color: #7d8188;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.71; /* 171.429% */
+}
